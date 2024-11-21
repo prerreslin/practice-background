@@ -4,7 +4,6 @@ from main import app, UPLOAD_DIR
 from utils import process_file_with_progress
 from shutil import copyfileobj
 from random import randint
-from routes import task_status
 import os
 
 task_status = {}
