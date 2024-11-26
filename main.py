@@ -5,7 +5,7 @@ import os
 
 load_dotenv()
 
-UPLOAD_DIR = os.getenv("UPLOAD_DIR", "default_upload_dir")
+UPLOAD_DIR = os.getenv("UPLOAD_DIR")
 
 app = FastAPI()
 
