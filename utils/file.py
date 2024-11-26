@@ -4,14 +4,6 @@ from time import sleep
 from shutil import copyfileobj
 import os
 
-
-def generate_progress_updates(filename: str = ""):
-    for progress in range(10):
-        yield f"data: Processing {filename}: {progress * 10}% complete\n\n"
-        sleep(1)
-    yield f"data: Processing {filename}: 100% complete\n\n"
-    yield f"data: {filename} processing completed!\n\n"
-
 def process_file_with_progress(filename: str, task_id: str):
     from routes.files import task_status
     
